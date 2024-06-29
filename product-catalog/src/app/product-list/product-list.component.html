@@ -1,0 +1,10 @@
+<div class="product-list">
+    <div *ngFor="let product of products" class="product">
+        <h2>{{ product.name }}</h2>
+        <img [src]="product.image" alt="{{ product.name }}">
+        <p>Price: ${{ product.price }}</p>
+    </div>
+    <div *ngIf="products.length <= 0">
+        <h2 class="not-found">No Products Found</h2>
+    </div>
+</div>

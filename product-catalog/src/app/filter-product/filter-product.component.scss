@@ -1,0 +1,32 @@
+.search-container {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.search-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 40px 10px 10px;
+    /* Adjust padding to make room for the icon */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
