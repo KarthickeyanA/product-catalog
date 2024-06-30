@@ -1,10 +1,15 @@
-<div class="product-list">
-    <div *ngFor="let product of products" class="product">
-        <h2>{{ product.name }}</h2>
-        <img [src]="product.image" alt="{{ product.name }}">
-        <p>Price: ${{ product.price }}</p>
+<div>
+    <div class="product-list">
+        <div *ngFor="let product of products | paginate: { itemsPerPage: 4, currentPage: page }" class="product">
+            <h2>{{ product.name }}</h2>
+            <img [src]="product.image" alt="{{ product.name }}">
+            <p>Price: ${{ product.price }}</p>
+        </div>
+        <div *ngIf="products.length <= 0">
+            <h2 class="not-found">No Products Found</h2>
+        </div>
     </div>
-    <div *ngIf="products.length <= 0">
-        <h2 class="not-found">No Products Found</h2>
+    <div class="pagination-container">
+        <pagination-controls (pageChange)="page = $event"></pagination-controls>
     </div>
 </div>

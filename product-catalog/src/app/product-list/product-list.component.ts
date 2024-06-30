@@ -12,6 +12,7 @@ export class ProductListComponent implements OnInit {
   products: Product[] = [];
   searchStringsubscription: Subscription;
   sortOrderSubscription: Subscription;
+  page: number = 1;
 
   constructor(private productService: ProductService) {
     this.searchStringsubscription = this.productService.searchString.subscribe(res => {
