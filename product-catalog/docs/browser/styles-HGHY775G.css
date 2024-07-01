@@ -1,0 +1,1 @@
+@media (max-width: 1200px){.product-list{grid-template-columns:repeat(2,1fr)}}@media (max-width: 768px){.controls{flex-direction:column}.search-input{width:100%;margin-bottom:10px}.product-list{grid-template-columns:1fr}.product{margin-bottom:20px}}
